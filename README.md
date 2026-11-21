@@ -12,7 +12,7 @@
 
 ## 下载与启动
 
-**下载**：`release/LOL皮肤决策助手-0.1.0-x64.zip`（开源仓库发布后，从 GitHub Releases 下载同名文件）。
+**下载**：[GitHub Releases](https://github.com/agarena/lol-skin-planner/releases/latest) 里的 `LOL-Skin-Advisor-0.1.0-x64.zip`（本机产物在 `release/`）。
 
 解压后双击 `LOL皮肤决策助手.exe`，**不需要安装**。
 
