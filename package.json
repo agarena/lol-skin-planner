@@ -1,0 +1,68 @@
+{
+  "name": "lol-skin-planner",
+  "private": true,
+  "version": "0.1.0",
+  "description": "英雄联盟皮肤购买决策助手（本地 LCU，只读）",
+  "author": "YG",
+  "main": "electron/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "audit": "node tools/audit_readonly.js",
+    "dev": "concurrently -k -n vite,app -c cyan,magenta \"vite\" \"wait-on tcp:127.0.0.1:5199 && cross-env ELECTRON_RUN_AS_NODE= VITE_DEV_URL=http://127.0.0.1:5199 electron .\"",
+    "build": "vite build",
+    "start": "cross-env ELECTRON_RUN_AS_NODE= electron .",
+    "pack": "vite build && electron-builder --win zip"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^33.3.1",
+    "electron-builder": "^25.1.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "com.yg.lolskinplanner",
+    "productName": "LOL皮肤决策助手",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "core/**/*",
+      "data/**/*",
+      "package.json",
+      "!**/*.map",
+      "!**/node_modules/**/{test,__tests__,tests,powered-test,example,examples}/**"
+    ],
+    "extraFiles": [
+      {
+        "from": "docs/使用说明.txt",
+        "to": "使用说明.txt"
+      },
+      {
+        "from": "LICENSE",
+        "to": "LICENSE"
+      }
+    ],
+    "win": {
+      "icon": "build/icon.png",
+      "target": [
+        {
+          "target": "zip",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "requestedExecutionLevel": "requireAdministrator",
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    }
+  },
+  "keywords": [],
+  "license": "MIT"
+}

@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2026 YG
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+数据来源声明
+
+本项目的部分静态数据抓取自公开网站，版权归原始作者所有：
+
+- 臻彩清单（data/prestige-chromas.json）
+  来源：https://splash.buguoguo.cn/prestigechromas
+  作者：布锅锅（https://space.bilibili.com/25503580）
+  原始项目：https://github.com/BuguoguoLoLCreator/lol-skin-explorer (GPLv3)
+
+- 皮肤上线时间（data/skin-release.json）
+  来源：Bilibili 公开视频信息
+
+- 神话精萃限时折扣（data/act-sale.json）
+  来源：英雄联盟官方活动页
+
+- 其余游戏数据
+  来源：本机英雄联盟客户端（LCU）只读接口
+
+本项目自身代码以 MIT 协议开源；上述数据文件不属于代码，遵循其原始来源的条款。

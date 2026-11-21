@@ -1,0 +1,28 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+release/
+
+# 临时文件（截图、测试脚本、下载的模型等）
+.tmp/
+.screenshots/
+
+# 本地快捷方式
+*.lnk
+启动.vbs
+
+# 缓存（data/*.json 是预置数据，不要 ignore；只 ignore 缓存）
+data/*.cache/
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

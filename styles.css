@@ -1,0 +1,12 @@
+﻿
+/* 丝带缩小：不遮挡缩略图 */
+.fc-ribbon {
+  top: 7px; right: -21px;
+  width: 74px;
+  font-size: 8px;
+  line-height: 13px;
+  letter-spacing: 0;
+}
+/* 底部空白：输入框区域改成顶部对齐 + 最高高度，剩余留白 */
+.ov-bottom { justify-content: flex-start; }
+.ds-box { margin-bottom: auto; }
